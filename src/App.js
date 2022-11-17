@@ -21,7 +21,12 @@ function Hero() {
         <h2 className="m-3 text-2xl md:text-4xl text-white text-center">
           Java Programming, done the Right Way
         </h2>
-        <p className="bg-transparent text-yellow-400 p-2 rounded-lg border-white border-2 scale-110 shadow-lg shadow-black hover:text-white hover:bg-yellow-400 hover:border-2 hover:border-yellow-400 transition-all ease-in-out duration-200 hover:cursor-pointer">
+        <p
+          className="bg-transparent text-yellow-400 p-2 rounded-lg border-white border-2 scale-110 shadow-lg shadow-black hover:text-white hover:bg-yellow-400 hover:border-2 hover:border-yellow-400 transition-all ease-in-out duration-200 hover:cursor-pointer"
+          onClick={() => {
+            window.location.hostname = "os.infobot.tech";
+          }}
+        >
           Check Out the OS
         </p>
       </div>
