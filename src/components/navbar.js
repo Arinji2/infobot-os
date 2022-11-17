@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../assets/pictures/logo.png";
 function NavBar() {
   return (
-    <div className="bg-slate-600 relative h-20 flex flex-row items-center justify-between">
+    <div className="bg-transparent relative h-20 flex flex-row items-center justify-between">
       <div className="flex flex-row items-center justify-evenly gap-3 border-r-2 border-white">
         <img src={Logo} alt={"Logo"} className="h-16 w-16 ml-4" />
         <p className="text-yellow-400 text-3xl mr-4 self-end mb-2">InfoBot</p>
