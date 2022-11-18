@@ -17,12 +17,12 @@ function NavBar() {
       <div
         className="absolute  right-5 top-5 hover:scale-110 transition-all ease-in-out duration-200 hover:cursor-pointer"
         onClick={() => {
-          window.location.hostname = "os.infobot.tech";
+          window.location.hostname = "";
         }}
       >
         <div className="flex flex-col items-center justify-center">
           <p className="text-yellow-400 bg-transparent border-2 border-white p-2 rounded-lg">
-            Check Out the OS
+            Coming Soon!
           </p>
         </div>
       </div>

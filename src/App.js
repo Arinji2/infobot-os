@@ -35,10 +35,10 @@ function Hero() {
         <p
           className="bg-yellow-400  text-[#3F434E] p-2 rounded-lg border-yellow-400 border-2 scale-110 shadow-lg shadow-black hover:text-yellow-400 hover:bg-transparent hover:border-2 hover:border-white transition-all ease-in-out duration-200 hover:cursor-pointer"
           onClick={() => {
-            window.location.hostname = "os.infobot.tech";
+            window.location.hostname = "";
           }}
         >
-          Check Out the OS
+          Coming Soon!
         </p>
       </div>
       <div className="w-[60%] md:w-2/6 h-screen flex flex-col items-center justify-start mt-20">
@@ -147,7 +147,7 @@ function What() {
           window.location.hostname = "os.infobot.tech";
         }}
       >
-        Check Out the OS
+        Coming Soon!
       </p>
     </div>
   );
