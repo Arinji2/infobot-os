@@ -8,16 +8,43 @@ import Pc from "./assets/pictures/Pc.jpg";
 import Loops from "./assets/pictures/Loops.jpg";
 import Logo from "./assets/pictures/logo.png";
 import "./App.css";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Oval } from "react-loader-spinner";
 
 function App() {
+  const [opacity, setOpacity] = useState(false);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setOpacity(true);
+      setLoading(false);
+    }, 3000);
+  }, []);
+
   return (
     <div className="App bg-gradient-to-br from-slate-400 to-black ">
-      <NavBar />
-      <Hero />
-      <Os />
-      <What />
-      <Footer />
+      <div
+        className={
+          loading
+            ? "flex flex-col items-center justify-center h-screen"
+            : "hidden"
+        }
+      >
+        {loading ? <Oval color="yellow" secondaryColor="transparent" /> : <></>}
+      </div>
+      <div
+        className={
+          opacity
+            ? "opacity-100 transition-all ease-in-out duration-200"
+            : "opacity-0 transition-all ease-in-out duration-200"
+        }
+      >
+        <NavBar />
+        <Hero />
+        <Os />
+        <What />
+        <Footer />
+      </div>
     </div>
   );
 }
@@ -38,7 +65,7 @@ function Hero() {
             window.location.hostname = "";
           }}
         >
-          Coming Soon!
+          OS Coming Soon!
         </p>
       </div>
       <div className="w-[60%] md:w-2/6 h-screen flex flex-col items-center justify-start mt-20">
@@ -144,10 +171,10 @@ function What() {
       <p
         className="bg-yellow-400  text-[#3F434E] p-2 rounded-lg border-yellow-400 border-2 scale-110 shadow-lg shadow-black hover:text-yellow-400 hover:bg-transparent hover:border-2 hover:border-white transition-all ease-in-out duration-200 hover:cursor-pointer mb-10"
         onClick={() => {
-          window.location.hostname = "os.infobot.tech";
+          window.location.hostname = "";
         }}
       >
-        Coming Soon!
+        OS Coming Soon!
       </p>
     </div>
   );

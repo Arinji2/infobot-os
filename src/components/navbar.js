@@ -22,7 +22,7 @@ function NavBar() {
       >
         <div className="flex flex-col items-center justify-center">
           <p className="text-yellow-400 bg-transparent border-2 border-white p-2 rounded-lg">
-            Coming Soon!
+            OS Coming Soon!
           </p>
         </div>
       </div>
