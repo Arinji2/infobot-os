@@ -98,8 +98,12 @@ function What() {
       </p>
 
       <div className="flex flex-col md:flex-row flex-wrap items-center justify-evenly m-5">
-        <div className=" w-[70vh]  md:h-2/4 md:w-2/4 mb-10">
-          <img src={Loops} alt={"Loops"} className="h-full rounded-lg p-2" />
+        <div className=" md:h-2/4 md:w-2/4 mb-10">
+          <img
+            src={Loops}
+            alt={"Loops"}
+            className="h-full rounded-lg w-full "
+          />
         </div>
         <div className="flex flex-row flex-wrap justify-evenly items-center gap-5">
           <div className="flex flex-col items-center justify-center h-52 md:h-60 w-28 md:w-32 bg-slate-800 scale-100 hover:scale-110 transition-all duration-200 ease-in-out rounded-lg ">
