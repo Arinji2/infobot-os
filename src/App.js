@@ -6,6 +6,7 @@ import Code from "./assets/pictures/code.svg";
 import NavBar from "./components/navbar";
 import Pc from "./assets/pictures/Pc.jpg";
 import Loops from "./assets/pictures/Loops.jpg";
+import Logo from "./assets/pictures/logo.png";
 import "./App.css";
 import React from "react";
 
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <Os />
       <What />
+      <Footer />
     </div>
   );
 }
@@ -88,7 +90,7 @@ function Os() {
 
 function What() {
   return (
-    <div className="flex flex-col flex-wrap items-center text-white gap-3 justify-center text-center mt-20 md:mt-10 bg-black">
+    <div className="flex flex-col flex-wrap items-center text-white gap-3 justify-center text-center mt-20 md:mt-10 bg-black border-b-2 border-white">
       <h3 className="text-5xl ">
         What is <span className="text-yellow-400">InfoBot</span>
       </h3>
@@ -136,9 +138,29 @@ function What() {
           </div>
         </div>
       </div>
-      <p className="pb-40"></p>
+      <h1 className="bg-transparent">
+        Feeling intrigued? This was just the InfoBot OS in a nutshell.
+      </h1>
+      <p
+        className="bg-yellow-400  text-[#3F434E] p-2 rounded-lg border-yellow-400 border-2 scale-110 shadow-lg shadow-black hover:text-yellow-400 hover:bg-transparent hover:border-2 hover:border-white transition-all ease-in-out duration-200 hover:cursor-pointer mb-10"
+        onClick={() => {
+          window.location.hostname = "os.infobot.tech";
+        }}
+      >
+        Check Out the OS
+      </p>
     </div>
   );
 }
 
+function Footer() {
+  return (
+    <div className="flex flex-col items-center justify-center gap-5 bg-black shadow-md shadow-black sticky top-0">
+      <h2 className="text-white text-4xl">InfoBot</h2>
+      <img src={Logo} alt={"Logo"} id="logo" className="w-32" />
+      <p className="text-yellow-400 mb-5">Java Programming, Made Easier</p>
+      <p className="m-30"></p>
+    </div>
+  );
+}
 export default App;

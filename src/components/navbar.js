@@ -15,7 +15,7 @@ function NavBar() {
         <p className="text-white text-2xl">InfoBot</p>
       </div>
       <div
-        className="absolute  right-0 md:right-5 top-5 hover:scale-110 transition-all ease-in-out duration-200 hover:cursor-pointer"
+        className="absolute  right-5 top-5 hover:scale-110 transition-all ease-in-out duration-200 hover:cursor-pointer"
         onClick={() => {
           window.location.hostname = "os.infobot.tech";
         }}
