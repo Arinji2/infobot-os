@@ -4,7 +4,7 @@ import "../index.css";
 function NavBar() {
   return (
     <div
-      className="nav bg-gradient-to-r from-[#909EB2] to-[#49515B]  h-20  sticky top-0 z-10 border-b-2 border-white ml-5 mr-5 flex-row items-center justify-between"
+      className="nav bg-gradient-to-r from-[#909EB2] to-[#49515B]  h-20  sticky top-0 z-10 border-b-2 border-white  flex-row items-center justify-between"
       id="nav"
       onScroll={(el) => {
         console.log(el.currentTarget.clientHeight);

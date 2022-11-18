@@ -1,6 +1,11 @@
 import HeroPic from "./assets/pictures/hero.svg";
+import Updated from "./assets/pictures/updated.svg";
+import Design from "./assets/pictures/design.svg";
+import Check from "./assets/pictures/check.svg";
+import Code from "./assets/pictures/code.svg";
 import NavBar from "./components/navbar";
 import Pc from "./assets/pictures/Pc.jpg";
+import Loops from "./assets/pictures/Loops.jpg";
 import "./App.css";
 import React from "react";
 
@@ -10,6 +15,7 @@ function App() {
       <NavBar />
       <Hero />
       <Os />
+      <What />
     </div>
   );
 }
@@ -43,6 +49,7 @@ function Hero() {
 function Os() {
   return (
     <div className="flex flex-col items-center text-white gap-3 justify-center text-center mt-20 md:mt-10">
+      <p className="p-10"></p>
       <h3 className="text-5xl">
         Meet the <span className="text-yellow-400">InfoBot OS</span>
       </h3>
@@ -50,7 +57,7 @@ function Os() {
       <img
         src={Pc}
         alt={Pc}
-        className="w-[80%] md:w-[55%] bg-transparent hover:md:w-[50%] transition-all ease-in-out duration-200"
+        className="w-[80%] md:w-[55%] md:scale-90 md:hover:scale-100 bg-transparent  transition-all ease-in-out duration-200"
       />
       <div className="mt-5 flex flex-row md:flex-nowrap flex-wrap justify-center items-center gap-4 m-4">
         <div className="flex-col items-center justify-center sm:w-50 sm:h-50 md:w-2/5   shadow-md shadow-black rounded-lg p-2 hover:shadow-black hover:shadow-lg scale-90 hover:scale-100 transition-all ease-in-out duration-200">
@@ -75,6 +82,57 @@ function Os() {
           </p>
         </div>
       </div>
+    </div>
+  );
+}
+
+function What() {
+  return (
+    <div className="flex flex-col flex-wrap items-center text-white gap-3 justify-center text-center mt-20 md:mt-10 bg-black">
+      <h3 className="text-5xl ">
+        What is <span className="text-yellow-400">InfoBot</span>
+      </h3>
+      <p>
+        The world is evolving around us, so why shouldn't the way we learn also
+        evolve?
+      </p>
+
+      <div className="flex flex-col md:flex-row flex-wrap items-center justify-evenly m-5">
+        <div className=" w-[70vh]  md:h-2/4 md:w-2/4 mb-10">
+          <img src={Loops} alt={"Loops"} className="h-full rounded-lg p-2" />
+        </div>
+        <div className="flex flex-row flex-wrap justify-evenly items-center gap-5">
+          <div className="flex flex-col items-center justify-center h-52 md:h-60 w-28 md:w-32 bg-slate-800 scale-100 hover:scale-110 transition-all duration-200 ease-in-out rounded-lg ">
+            <h1 className="text-sm md:text-xl text-yellow-400">
+              Elegant Design
+            </h1>
+            <img src={Design} alt={Design} className="" />
+            <p className="text-xs md:text-sm">Beautifully designed systems.</p>
+          </div>
+          <div className="flex flex-col items-center justify-center h-52 md:h-60 w-28 md:w-32 bg-slate-800 scale-100 hover:scale-110 transition-all duration-200 ease-in-out rounded-lg ">
+            <h1 className="text-sm md:text-xl text-yellow-400">
+              Verified Programs
+            </h1>
+            <img src={Check} alt={"Check"} className="" />
+            <p className="text-xs md:text-sm">
+              Each program has been Verified.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center h-52 md:h-60 w-28 md:w-32 bg-slate-800 scale-100 hover:scale-110 transition-all duration-200 ease-in-out rounded-lg ">
+            <h1 className="text-sm md:text-xl text-yellow-400">
+              Updated Weekly
+            </h1>
+            <img src={Updated} alt={"Updated"} className="" />
+            <p className="text-xs md:text-sm">Weekly additions of Material.</p>
+          </div>
+          <div className="flex flex-col items-center justify-center h-52 md:h-60 w-28 md:w-32 bg-slate-800 scale-100 hover:scale-110 transition-all duration-200 ease-in-out rounded-lg ">
+            <h1 className="text-sm md:text-xl text-yellow-400">Neat Java</h1>
+            <img src={Code} alt={"Code"} className="" />
+            <p className="text-xs md:text-sm">Clean and Simple Java Code.</p>
+          </div>
+        </div>
+      </div>
+      <p className="pb-40"></p>
     </div>
   );
 }
