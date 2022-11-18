@@ -26,7 +26,7 @@ function App() {
       <div
         className={
           loading
-            ? "flex flex-col items-center justify-center h-screen"
+            ? "flex flex-col items-center justify-center h-screen gap-10"
             : "hidden"
         }
       >
@@ -53,7 +53,7 @@ function Hero() {
   return (
     <div className="relative flex flex-col md:flex-row items-center justify-center md:justify-between h-screen bg-transparent ">
       <div className=" h-screen w-3/5 flex flex-col items-center justify-start gap-10 md:gap-20 relative ">
-        <h1 className="m-3 text-5xl md:text-8xl text-yellow-400 mt-20 ">
+        <h1 className="m-3 text-5xl md:text-8xl text-yellow-400 mt-[50px] mb-[50px] ">
           InfoBot
         </h1>
         <h2 className="m-3 text-2xl md:text-4xl text-white text-center">
@@ -117,15 +117,14 @@ function Os() {
 
 function What() {
   return (
-    <div className="flex flex-col flex-wrap items-center text-white gap-3 justify-center text-center mt-20 md:mt-10 bg-black border-b-2 border-white">
-      <h3 className="text-5xl ">
+    <div className="flex flex-col flex-wrap items-center text-white gap-3 justify-center text-center mt-20 md:mt-36 bg-black border-b-2 border-white">
+      <h3 className="text-5xl pt-10">
         What is <span className="text-yellow-400">InfoBot</span>
       </h3>
       <p>
         The world is evolving around us, so why shouldn't the way we learn also
         evolve?
       </p>
-
       <div className="flex flex-col md:flex-row flex-wrap items-center justify-evenly m-5">
         <div className=" md:h-2/4 md:w-2/4 mb-10">
           <img
@@ -176,13 +175,14 @@ function What() {
       >
         OS Coming Soon!
       </p>
+      Copyright © 2022. All Rights Reserved To InfoBot
     </div>
   );
 }
 
 function Footer() {
   return (
-    <div className="flex flex-col items-center justify-center gap-5 bg-black shadow-md shadow-black sticky top-0">
+    <div className="flex flex-col items-center justify-center gap-5 bg-black shadow-md shadow-black sticky top-0 pt-10">
       <h2 className="text-white text-4xl">InfoBot</h2>
       <img src={Logo} alt={"Logo"} id="logo" className="w-32" />
       <p className="text-yellow-400 mb-5">Java Programming, Made Easier</p>

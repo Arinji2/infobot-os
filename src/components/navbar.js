@@ -10,18 +10,23 @@ function NavBar() {
         console.log(el.currentTarget.clientHeight);
       }}
     >
-      <div className="flex flex-col items-center justify-center w-20 h-20 ml-5">
+      <div className="flex flex-col items-center justify-center w-20 h-20 ml-10">
         <img src={Logo} alt={"Logo"} className="h-10" />
         <p className="text-white text-2xl">InfoBot</p>
       </div>
       <div
-        className="absolute  right-5 top-5 hover:scale-110 transition-all ease-in-out duration-200 hover:cursor-pointer"
+        className="absolute  right-5 top-5"
         onClick={() => {
           window.location.hostname = "";
         }}
       >
         <div className="flex flex-col items-center justify-center">
-          <p className="text-yellow-400 bg-transparent border-2 border-white p-2 rounded-lg">
+          <p
+            className="bg-transparent  text-yellow-400 p-2 rounded-lg border-yellow-400 border-2 scale-110 shadow-lg shadow-black hover:text-[#3F434E] hover:bg-yellow-400 hover:border-2 hover:border-white transition-all ease-in-out duration-200 hover:cursor-pointer"
+            onClick={() => {
+              window.location.hostname = "";
+            }}
+          >
             OS Coming Soon!
           </p>
         </div>
