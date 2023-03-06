@@ -17,17 +17,17 @@ function NavBar() {
       <div
         className="absolute  right-5 top-5"
         onClick={() => {
-          window.location.hostname = "";
+          window.location.hostname = "os.infobot.tech/";
         }}
       >
         <div className="flex flex-col items-center justify-center">
           <p
             className="bg-transparent  text-yellow-400 p-2 rounded-lg border-yellow-400 border-2 scale-110 shadow-lg shadow-black hover:text-[#3F434E] hover:bg-yellow-400 hover:border-2 hover:border-white transition-all ease-in-out duration-200 hover:cursor-pointer"
             onClick={() => {
-              window.location.hostname = "";
+              window.location.hostname = "https://os.infobot.tech/";
             }}
           >
-            OS Coming Soon!
+            Click to go to the OS
           </p>
         </div>
       </div>
