@@ -62,7 +62,7 @@ function Hero() {
         <p
           className="bg-yellow-400  text-[#3F434E] p-2 rounded-lg border-yellow-400 border-2 scale-110 shadow-lg shadow-black hover:text-yellow-400 hover:bg-transparent hover:border-2 hover:border-white transition-all ease-in-out duration-200 hover:cursor-pointer"
           onClick={() => {
-            window.location.hostname = "";
+             window.location.hostname = "https://os.infobot.tech/";
           }}
         >
           Click to go to the OS
